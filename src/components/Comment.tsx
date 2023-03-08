@@ -4,7 +4,12 @@ import user from '../images/bruno_user.jpg'
 import { Avatar } from './Avatar'
 import { useState } from 'react'
 
-export function Comment({ content, onDeleteComment }){
+interface CommentProps {
+    content: string,
+    onDeleteComment: (comment : string) => void,
+}
+
+export function Comment({ content, onDeleteComment } : CommentProps){
 
     const [likeCount, setLikeCount] = useState(0);
 
@@ -20,7 +25,7 @@ export function Comment({ content, onDeleteComment }){
 
     return(
         <div className={style.comment}>
-            <Avatar hasBorder={false} src={user}/>
+            <Avatar hasBorder={false} src={user} alt=""/>
 
             <div className={style.commentBox}>
                 <div className={style.commentContent}>

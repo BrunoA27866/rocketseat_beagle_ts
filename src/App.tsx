@@ -9,9 +9,9 @@ const posts = [
   {
     id:1,
     author:{
-      avatarUrl: user,
+      src: user,
       name: 'Bruno A',
-      role: 'Programmer'
+      rule: 'Programmer'
     },
     content:[
       {type: 'paragraph', content:' Fala galeraa 👋 '},
@@ -23,9 +23,9 @@ const posts = [
   {
     id:2,
     author:{
-      avatarUrl: user,
+      src: user,
       name: 'Bruno A',
-      role: 'Programmer'
+      rule: 'Programmer'
     },
     content:[
       {type: 'paragraph', content:' Fala galeraa 👋 '},
